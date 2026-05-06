@@ -1,3 +1,4 @@
+
 /*
 ------------------------------------------------------------///////OBJETIVO///////------------------------------------------------------------
 
@@ -35,6 +36,7 @@ double parcial1;
 double parcial2;
 int nroLibreta;
 
+
 /*PROTOTIPOS DE FUNCIONES*/
 void consultarDatos();
 char* calcularCondicion(double p1, double p2);
@@ -52,6 +54,7 @@ int main()
 void consultarDatos(){
     printf("Ingrese el numero de la libreta\n");
     scanf("%d",&nroLibreta);   
+
 
                         // Validacion de datos ingresados
     double resultado1;
@@ -103,6 +106,7 @@ char* calcularCondicion(double p1, double p2){
         return "Libre";
     }
 
+
     //Funcion que devuelve una cadena de caracteres a partir de la condicion de cada alumno
 }
 
@@ -119,8 +123,7 @@ if (p1>=6 || p2>=6)
 {
     return true;
 }
-return false;
-
+    return false;
     //Funcion booleana que retorna verdadero si hay algun o ambos examenes aprobados (necesaria para la consigna)
 }
 
@@ -157,6 +160,7 @@ void mostrarCondicion(){
 
     //Funcion que nos permite adjuntar las demas funciones, elegir que se muestra y para no sobrecargar el main con codigo
 }
+
 /*CASOS DE USO
 
 CASO (Condicion libre):
